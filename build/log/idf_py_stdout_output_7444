@@ -1,0 +1,655 @@
+h�ښ�j%�(35) boot: chip re�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 18 2024 18:21:29[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=225c8h (140744) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=000325f0 vaddr=3ffb0000 size=03bc4h ( 15300) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000361bc vaddr=40080000 size=09e5ch ( 40540) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9559ch (611740) map[0m
+[0;32mI (384) esp_image: segment 4: paddr=000d55c4 vaddr=40089e5c size=0c9fch ( 51708) load[0m
+[0;32mI (416) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (416) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     dad-birthday[0m
+[0;32mI (445) cpu_start: App version:      1[0m
+[0;32mI (449) cpu_start: Compile time:     Jun 18 2024 18:21:26[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  f41ed5e89...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (470) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (475) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (480) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB82D0 len 00027D30 (159 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 40096858 len 000097A8 (37 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (581) WifiConnection: SSID: KC and JoJo[0m
+[0;32mI (581) WifiConnection: PASSWORD Ev@n_090111[0m
+I (601) wifi:wifi driver task: 3ffc0378, prio:23, stack:6656, core=0
+I (621) wifi:wifi firmware version: 3e0076f
+I (621) wifi:wifi certification version: v7.0
+I (621) wifi:config NVS flash: enabled
+I (621) wifi:config nano formating: disabled
+I (621) wifi:Init data frame dynamic rx buffer num: 32
+I (631) wifi:Init static rx mgmt buffer num: 5
+I (631) wifi:Init management short buffer num: 32
+I (631) wifi:Init dynamic tx buffer num: 32
+I (641) wifi:Init static rx buffer size: 1600
+I (641) wifi:Init static rx buffer num: 10
+I (651) wifi:Init dynamic rx buffer num: 32
+[0;32mI (651) wifi_init: rx ba win: 6[0m
+[0;32mI (651) wifi_init: tcpip mbox: 32[0m
+[0;32mI (661) wifi_init: udp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp mbox: 6[0m
+[0;32mI (671) wifi_init: tcp tx win: 5760[0m
+[0;32mI (671) wifi_init: tcp rx win: 5760[0m
+[0;32mI (671) wifi_init: tcp mss: 1440[0m
+[0;32mI (681) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (681) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (701) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (791) wifi:mode : sta (e8:6b:ea:ca:38:3c)
+I (791) wifi:enable tsf
+[0;32mI (791) WifiConnection: Wifi initialised[0m
+I (1371) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1371) wifi:state: init -> auth (b0)
+I (1381) wifi:state: auth -> assoc (0)
+I (1421) wifi:state: assoc -> run (10)
+I (1521) wifi:connected with KC and JoJo, aid = 2, channel 11, BW20, bssid = 64:cc:22:04:7c:45
+I (1521) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (1541) wifi:pm start, type: 1
+
+I (1541) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1581) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (1901) wifi:<ba-add>idx:0 (ifx:0, 64:cc:22:04:7c:45), tid:6, ssn:5, winSize:64
+[0;32mI (2541) esp_netif_handlers: sta ip: 192.168.1.123, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (2541) WifiConnection: Got IP: 192.168.1.123[0m
+[0;32mI (2541) WifiConnection: Connected to the internet![0m
+[0;32mI (2551) Time: Waiting for system time to be set...[0m
+[0;32mI (4551) Time: Waiting for system time to be set...[0m
+I (4851) wifi:<ba-add>idx:1 (ifx:0, 64:cc:22:04:7c:45), tid:0, ssn:0, winSize:64
+[0;32mI (6551) HTTPServer: HTTP Server started[0m
+[0;32mI (6551) Time: : 19:31:42 Waiting for time: 0:0:0[0m
+[0;32mI (6751) Time: : 19:31:42 Waiting for time: 0:0:0[0m
+[0;32mI (6951) Time: : 19:31:43 Waiting for time: 0:0:0[0m
+[0;32mI (7151) Time: : 19:31:43 Waiting for time: 0:0:0[0m
+[0;32mI (7351) Time: : 19:31:43 Waiting for time: 0:0:0[0m
+[0;32mI (7551) Time: : 19:31:43 Waiting for time: 0:0:0[0m
+[0;32mI (7751) Time: : 19:31:43 Waiting for time: 0:0:0[0m
+[0;32mI (7951) Time: : 19:31:44 Waiting for time: 0:0:0[0m
+[0;32mI (8151) Time: : 19:31:44 Waiting for time: 0:0:0[0m
+[0;32mI (8351) Time: : 19:31:44 Waiting for time: 0:0:0[0m
+[0;32mI (8551) Time: : 19:31:44 Waiting for time: 0:0:0[0m
+[0;32mI (8751) Time: : 19:31:44 Waiting for time: 0:0:0[0m
+[0;32mI (8951) Time: : 19:31:45 Waiting for time: 0:0:0[0m
+[0;32mI (9151) Time: : 19:31:45 Waiting for time: 0:0:0[0m
+[0;32mI (9351) Time: : 19:31:45 Waiting for time: 0:0:0[0m
+[0;32mI (9551) Time: : 19:31:45 Waiting for time: 0:0:0[0m
+[0;32mI (9751) Time: : 19:31:45 Waiting for time: 0:0:0[0m
+[0;32mI (9951) Time: : 19:31:46 Waiting for time: 0:0:0[0m
+[0;32mI (10151) Time: : 19:31:46 Waiting for time: 0:0:0[0m
+[0;32mI (10351) Time: : 19:31:46 Waiting for time: 0:0:0[0m
+[0;32mI (10551) Time: : 19:31:46 Waiting for time: 0:0:0[0m
+[0;32mI (10751) Time: : 19:31:46 Waiting for time: 0:0:0[0m
+[0;32mI (10951) Time: : 19:31:47 Waiting for time: 0:0:0[0m
+[0;32mI (11151) Time: : 19:31:47 Waiting for time: 0:0:0[0m
+[0;32mI (11351) Time: : 19:31:47 Waiting for time: 0:0:0[0m
+[0;32mI (11551) Time: : 19:31:47 Waiting for time: 0:0:0[0m
+[0;32mI (11751) Time: : 19:31:47 Waiting for time: 0:0:0[0m
+[0;32mI (11951) Time: : 19:31:48 Waiting for time: 0:0:0[0m
+[0;32mI (12151) Time: : 19:31:48 Waiting for time: 0:0:0[0m
+[0;32mI (12351) Time: : 19:31:48 Waiting for time: 0:0:0[0m
+[0;32mI (12551) Time: : 19:31:48 Waiting for time: 0:0:0[0m
+[0;32mI (12751) Time: : 19:31:48 Waiting for time: 0:0:0[0m
+[0;32mI (12951) Time: : 19:31:49 Waiting for time: 0:0:0[0m
+[0;32mI (13151) Time: : 19:31:49 Waiting for time: 0:0:0[0m
+[0;32mI (13351) Time: : 19:31:49 Waiting for time: 0:0:0[0m
+[0;32mI (13551) Time: : 19:31:49 Waiting for time: 0:0:0[0m
+[0;32mI (13751) Time: : 19:31:49 Waiting for time: 0:0:0[0m
+[0;32mI (13951) Time: : 19:31:50 Waiting for time: 0:0:0[0m
+[0;32mI (14151) Time: : 19:31:50 Waiting for time: 0:0:0[0m
+[0;32mI (14351) Time: : 19:31:50 Waiting for time: 0:0:0[0m
+[0;32mI (14551) Time: : 19:31:50 Waiting for time: 0:0:0[0m
+[0;32mI (14751) Time: : 19:31:50 Waiting for time: 0:0:0[0m
+[0;32mI (14951) Time: : 19:31:51 Waiting for time: 0:0:0[0m
+[0;32mI (15151) Time: : 19:31:51 Waiting for time: 0:0:0[0m
+[0;32mI (15351) Time: : 19:31:51 Waiting for time: 0:0:0[0m
+[0;32mI (15551) Time: : 19:31:51 Waiting for time: 0:0:0[0m
+[0;32mI (15751) Time: : 19:31:51 Waiting for time: 0:0:0[0m
+[0;32mI (15951) Time: : 19:31:52 Waiting for time: 0:0:0[0m
+[0;32mI (16151) Time: : 19:31:52 Waiting for time: 0:0:0[0m
+[0;32mI (16351) Time: : 19:31:52 Waiting for time: 0:0:0[0m
+[0;32mI (16551) Time: : 19:31:52 Waiting for time: 0:0:0[0m
+[0;32mI (16751) Time: : 19:31:52 Waiting for time: 0:0:0[0m
+[0;32mI (16951) Time: : 19:31:53 Waiting for time: 0:0:0[0m
+[0;32mI (17151) Time: : 19:31:53 Waiting for time: 0:0:0[0m
+[0;32mI (17351) Time: : 19:31:53 Waiting for time: 0:0:0[0m
+[0;32mI (17551) Time: : 19:31:53 Waiting for time: 0:0:0[0m
+[0;32mI (17751) Time: : 19:31:53 Waiting for time: 0:0:0[0m
+[0;32mI (17951) Time: : 19:31:54 Waiting for time: 0:0:0[0m
+[0;32mI (18151) Time: : 19:31:54 Waiting for time: 0:0:0[0m
+[0;32mI (18351) Time: : 19:31:54 Waiting for time: 0:0:0[0m
+[0;32mI (18551) Time: : 19:31:54 Waiting for time: 0:0:0[0m
+[0;32mI (18751) Time: : 19:31:54 Waiting for time: 0:0:0[0m
+[0;32mI (18951) Time: : 19:31:55 Waiting for time: 0:0:0[0m
+[0;32mI (19151) Time: : 19:31:55 Waiting for time: 0:0:0[0m
+[0;32mI (19351) Time: : 19:31:55 Waiting for time: 0:0:0[0m
+[0;32mI (19551) Time: : 19:31:55 Waiting for time: 0:0:0[0m
+[0;32mI (19751) Time: : 19:31:55 Waiting for time: 0:0:0[0m
+[0;32mI (19951) Time: : 19:31:56 Waiting for time: 0:0:0[0m
+[0;32mI (20151) Time: : 19:31:56 Waiting for time: 0:0:0[0m
+[0;32mI (20351) Time: : 19:31:56 Waiting for time: 0:0:0[0m
+[0;32mI (20551) Time: : 19:31:56 Waiting for time: 0:0:0[0m
+[0;32mI (20751) Time: : 19:31:56 Waiting for time: 0:0:0[0m
+[0;32mI (20951) Time: : 19:31:57 Waiting for time: 0:0:0[0m
+[0;32mI (21151) Time: : 19:31:57 Waiting for time: 0:0:0[0m
+[0;32mI (21351) Time: : 19:31:57 Waiting for time: 0:0:0[0m
+[0;32mI (21551) Time: : 19:31:57 Waiting for time: 0:0:0[0m
+[0;32mI (21751) Time: : 19:31:57 Waiting for time: 0:0:0[0m
+[0;32mI (21951) Time: : 19:31:58 Waiting for time: 0:0:0[0m
+[0;32mI (22151) Time: : 19:31:58 Waiting for time: 0:0:0[0m
+[0;32mI (22351) Time: : 19:31:58 Waiting for time: 0:0:0[0m
+[0;32mI (22551) Time: : 19:31:58 Waiting for time: 0:0:0[0m
+[0;32mI (22751) Time: : 19:31:58 Waiting for time: 0:0:0[0m
+[0;32mI (22951) Time: : 19:31:59 Waiting for time: 0:0:0[0m
+[0;32mI (23151) Time: : 19:31:59 Waiting for time: 0:0:0[0m
+[0;32mI (23351) Time: : 19:31:59 Waiting for time: 0:0:0[0m
+[0;32mI (23551) Time: : 19:31:59 Waiting for time: 0:0:0[0m
+[0;32mI (23751) Time: : 19:31:59 Waiting for time: 0:0:0[0m
+[0;32mI (23951) Time: : 19:32:0 Waiting for time: 0:0:0[0m
+[0;32mI (24151) Time: : 19:32:0 Waiting for time: 0:0:0[0m
+[0;32mI (24351) Time: : 19:32:0 Waiting for time: 0:0:0[0m
+[0;32mI (24551) Time: : 19:32:0 Waiting for time: 0:0:0[0m
+[0;32mI (24751) Time: : 19:32:0 Waiting for time: 0:0:0[0m
+[0;32mI (24951) Time: : 19:32:1 Waiting for time: 0:0:0[0m
+[0;32mI (25151) Time: : 19:32:1 Waiting for time: 0:0:0[0m
+[0;32mI (25351) Time: : 19:32:1 Waiting for time: 0:0:0[0m
+[0;32mI (25551) Time: : 19:32:1 Waiting for time: 0:0:0[0m
+[0;32mI (25751) Time: : 19:32:1 Waiting for time: 0:0:0[0m
+[0;32mI (25951) Time: : 19:32:2 Waiting for time: 0:0:0[0m
+[0;32mI (26151) Time: : 19:32:2 Waiting for time: 0:0:0[0m
+[0;32mI (26351) Time: : 19:32:2 Waiting for time: 0:0:0[0m
+[0;32mI (26551) Time: : 19:32:2 Waiting for time: 0:0:0[0m
+[0;32mI (26751) Time: : 19:32:2 Waiting for time: 0:0:0[0m
+[0;32mI (26951) Time: : 19:32:3 Waiting for time: 0:0:0[0m
+[0;32mI (27151) Time: : 19:32:3 Waiting for time: 0:0:0[0m
+[0;32mI (27351) Time: : 19:32:3 Waiting for time: 0:0:0[0m
+[0;32mI (27551) Time: : 19:32:3 Waiting for time: 0:0:0[0m
+[0;32mI (27751) Time: : 19:32:3 Waiting for time: 0:0:0[0m
+[0;32mI (27951) Time: : 19:32:4 Waiting for time: 0:0:0[0m
+[0;32mI (28151) Time: : 19:32:4 Waiting for time: 0:0:0[0m
+[0;32mI (28351) Time: : 19:32:4 Waiting for time: 0:0:0[0m
+[0;32mI (28551) Time: : 19:32:4 Waiting for time: 0:0:0[0m
+[0;32mI (28751) Time: : 19:32:4 Waiting for time: 0:0:0[0m
+[0;32mI (28951) Time: : 19:32:5 Waiting for time: 0:0:0[0m
+[0;32mI (29151) Time: : 19:32:5 Waiting for time: 0:0:0[0m
+[0;32mI (29351) Time: : 19:32:5 Waiting for time: 0:0:0[0m
+[0;32mI (29551) Time: : 19:32:5 Waiting for time: 0:0:0[0m
+[0;32mI (29751) Time: : 19:32:5 Waiting for time: 0:0:0[0m
+[0;32mI (29951) Time: : 19:32:6 Waiting for time: 0:0:0[0m
+[0;32mI (30151) Time: : 19:32:6 Waiting for time: 0:0:0[0m
+[0;32mI (30351) Time: : 19:32:6 Waiting for time: 0:0:0[0m
+[0;32mI (30551) Time: : 19:32:6 Waiting for time: 0:0:0[0m
+[0;32mI (30751) Time: : 19:32:6 Waiting for time: 0:0:0[0m
+[0;32mI (30951) Time: : 19:32:7 Waiting for time: 0:0:0[0m
+[0;32mI (31151) Time: : 19:32:7 Waiting for time: 0:0:0[0m
+[0;32mI (31351) Time: : 19:32:7 Waiting for time: 0:0:0[0m
+[0;32mI (31551) Time: : 19:32:7 Waiting for time: 0:0:0[0m
+[0;32mI (31751) Time: : 19:32:7 Waiting for time: 0:0:0[0m
+[0;32mI (31951) Time: : 19:32:8 Waiting for time: 0:0:0[0m
+[0;32mI (32151) Time: : 19:32:8 Waiting for time: 0:0:0[0m
+[0;32mI (32351) Time: : 19:32:8 Waiting for time: 0:0:0[0m
+[0;32mI (32551) Time: : 19:32:8 Waiting for time: 0:0:0[0m
+[0;32mI (32751) Time: : 19:32:8 Waiting for time: 0:0:0[0m
+[0;32mI (32951) Time: : 19:32:9 Waiting for time: 0:0:0[0m
+[0;32mI (33151) Time: : 19:32:9 Waiting for time: 0:0:0[0m
+[0;32mI (33351) Time: : 19:32:9 Waiting for time: 0:0:0[0m
+[0;32mI (33551) Time: : 19:32:9 Waiting for time: 0:0:0[0m
+[0;32mI (33751) Time: : 19:32:9 Waiting for time: 0:0:0[0m
+[0;32mI (33951) Time: : 19:32:10 Waiting for time: 0:0:0[0m
+[0;32mI (34151) Time: : 19:32:10 Waiting for time: 0:0:0[0m
+[0;32mI (34351) Time: : 19:32:10 Waiting for time: 0:0:0[0m
+[0;32mI (34551) Time: : 19:32:10 Waiting for time: 0:0:0[0m
+[0;32mI (34751) Time: : 19:32:10 Waiting for time: 0:0:0[0m
+[0;32mI (34951) Time: : 19:32:11 Waiting for time: 0:0:0[0m
+[0;32mI (35151) Time: : 19:32:11 Waiting for time: 0:0:0[0m
+[0;32mI (35351) Time: : 19:32:11 Waiting for time: 0:0:0[0m
+[0;32mI (35551) Time: : 19:32:11 Waiting for time: 0:0:0[0m
+[0;32mI (35751) Time: : 19:32:11 Waiting for time: 0:0:0[0m
+[0;32mI (35951) Time: : 19:32:12 Waiting for time: 0:0:0[0m
+[0;32mI (36151) Time: : 19:32:12 Waiting for time: 0:0:0[0m
+[0;32mI (36351) Time: : 19:32:12 Waiting for time: 0:0:0[0m
+[0;32mI (36551) Time: : 19:32:12 Waiting for time: 0:0:0[0m
+[0;32mI (36751) Time: : 19:32:12 Waiting for time: 0:0:0[0m
+[0;32mI (36951) Time: : 19:32:13 Waiting for time: 0:0:0[0m
+[0;32mI (37151) Time: : 19:32:13 Waiting for time: 0:0:0[0m
+[0;32mI (37351) Time: : 19:32:13 Waiting for time: 0:0:0[0m
+[0;32mI (37551) Time: : 19:32:13 Waiting for time: 0:0:0[0m
+[0;32mI (37751) Time: : 19:32:13 Waiting for time: 0:0:0[0m
+[0;32mI (37951) Time: : 19:32:14 Waiting for time: 0:0:0[0m
+[0;32mI (38151) Time: : 19:32:14 Waiting for time: 0:0:0[0m
+[0;32mI (38351) Time: : 19:32:14 Waiting for time: 0:0:0[0m
+[0;32mI (38551) Time: : 19:32:14 Waiting for time: 0:0:0[0m
+[0;32mI (38751) Time: : 19:32:14 Waiting for time: 0:0:0[0m
+[0;32mI (38951) Time: : 19:32:15 Waiting for time: 0:0:0[0m
+[0;32mI (39151) Time: : 19:32:15 Waiting for time: 0:0:0[0m
+[0;32mI (39351) Time: : 19:32:15 Waiting for time: 0:0:0[0m
+[0;32mI (39551) Time: : 19:32:15 Waiting for time: 0:0:0[0m
+[0;32mI (39701) elodie-birthday: Alarm set for 19:33:0[0m
+[0;32mI (39751) Time: : 19:32:15 Waiting for time: 19:33:0[0m
+[0;32mI (39951) Time: : 19:32:16 Waiting for time: 19:33:0[0m
+[0;32mI (40151) Time: : 19:32:16 Waiting for time: 19:33:0[0m
+[0;32mI (40351) Time: : 19:32:16 Waiting for time: 19:33:0[0m
+[0;32mI (40551) Time: : 19:32:16 Waiting for time: 19:33:0[0m
+[0;32mI (40751) Time: : 19:32:16 Waiting for time: 19:33:0[0m
+[0;32mI (40951) Time: : 19:32:17 Waiting for time: 19:33:0[0m
+[0;32mI (41151) Time: : 19:32:17 Waiting for time: 19:33:0[0m
+[0;32mI (41351) Time: : 19:32:17 Waiting for time: 19:33:0[0m
+[0;32mI (41551) Time: : 19:32:17 Waiting for time: 19:33:0[0m
+[0;32mI (41751) Time: : 19:32:17 Waiting for time: 19:33:0[0m
+[0;32mI (41951) Time: : 19:32:18 Waiting for time: 19:33:0[0m
+[0;32mI (42151) Time: : 19:32:18 Waiting for time: 19:33:0[0m
+[0;32mI (42351) Time: : 19:32:18 Waiting for time: 19:33:0[0m
+[0;32mI (42551) Time: : 19:32:18 Waiting for time: 19:33:0[0m
+[0;32mI (42751) Time: : 19:32:18 Waiting for time: 19:33:0[0m
+[0;32mI (42951) Time: : 19:32:19 Waiting for time: 19:33:0[0m
+[0;32mI (43151) Time: : 19:32:19 Waiting for time: 19:33:0[0m
+[0;32mI (43351) Time: : 19:32:19 Waiting for time: 19:33:0[0m
+[0;32mI (43551) Time: : 19:32:19 Waiting for time: 19:33:0[0m
+[0;32mI (43751) Time: : 19:32:19 Waiting for time: 19:33:0[0m
+[0;32mI (43951) Time: : 19:32:20 Waiting for time: 19:33:0[0m
+[0;32mI (44151) Time: : 19:32:20 Waiting for time: 19:33:0[0m
+[0;32mI (44351) Time: : 19:32:20 Waiting for time: 19:33:0[0m
+[0;32mI (44551) Time: : 19:32:20 Waiting for time: 19:33:0[0m
+[0;32mI (44751) Time: : 19:32:20 Waiting for time: 19:33:0[0m
+[0;32mI (44951) Time: : 19:32:21 Waiting for time: 19:33:0[0m
+[0;32mI (45151) Time: : 19:32:21 Waiting for time: 19:33:0[0m
+[0;32mI (45351) Time: : 19:32:21 Waiting for time: 19:33:0[0m
+[0;32mI (45551) Time: : 19:32:21 Waiting for time: 19:33:0[0m
+[0;32mI (45751) Time: : 19:32:21 Waiting for time: 19:33:0[0m
+[0;32mI (45951) Time: : 19:32:22 Waiting for time: 19:33:0[0m
+[0;32mI (46151) Time: : 19:32:22 Waiting for time: 19:33:0[0m
+[0;32mI (46351) Time: : 19:32:22 Waiting for time: 19:33:0[0m
+[0;32mI (46551) Time: : 19:32:22 Waiting for time: 19:33:0[0m
+[0;32mI (46751) Time: : 19:32:22 Waiting for time: 19:33:0[0m
+[0;32mI (46951) Time: : 19:32:23 Waiting for time: 19:33:0[0m
+[0;32mI (47151) Time: : 19:32:23 Waiting for time: 19:33:0[0m
+[0;32mI (47351) Time: : 19:32:23 Waiting for time: 19:33:0[0m
+[0;32mI (47551) Time: : 19:32:23 Waiting for time: 19:33:0[0m
+[0;32mI (47751) Time: : 19:32:23 Waiting for time: 19:33:0[0m
+[0;32mI (47951) Time: : 19:32:24 Waiting for time: 19:33:0[0m
+[0;32mI (48151) Time: : 19:32:24 Waiting for time: 19:33:0[0m
+[0;32mI (48351) Time: : 19:32:24 Waiting for time: 19:33:0[0m
+[0;32mI (48551) Time: : 19:32:24 Waiting for time: 19:33:0[0m
+[0;32mI (48751) Time: : 19:32:24 Waiting for time: 19:33:0[0m
+[0;32mI (48951) Time: : 19:32:25 Waiting for time: 19:33:0[0m
+[0;32mI (49151) Time: : 19:32:25 Waiting for time: 19:33:0[0m
+[0;32mI (49351) Time: : 19:32:25 Waiting for time: 19:33:0[0m
+[0;32mI (49551) Time: : 19:32:25 Waiting for time: 19:33:0[0m
+[0;32mI (49751) Time: : 19:32:25 Waiting for time: 19:33:0[0m
+[0;32mI (49951) Time: : 19:32:26 Waiting for time: 19:33:0[0m
+[0;32mI (50151) Time: : 19:32:26 Waiting for time: 19:33:0[0m
+[0;32mI (50351) Time: : 19:32:26 Waiting for time: 19:33:0[0m
+[0;32mI (50551) Time: : 19:32:26 Waiting for time: 19:33:0[0m
+[0;32mI (50751) Time: : 19:32:26 Waiting for time: 19:33:0[0m
+[0;32mI (50951) Time: : 19:32:27 Waiting for time: 19:33:0[0m
+[0;32mI (51151) Time: : 19:32:27 Waiting for time: 19:33:0[0m
+[0;32mI (51351) Time: : 19:32:27 Waiting for time: 19:33:0[0m
+[0;32mI (51551) Time: : 19:32:27 Waiting for time: 19:33:0[0m
+[0;32mI (51751) Time: : 19:32:27 Waiting for time: 19:33:0[0m
+[0;32mI (51951) Time: : 19:32:28 Waiting for time: 19:33:0[0m
+[0;32mI (52151) Time: : 19:32:28 Waiting for time: 19:33:0[0m
+[0;32mI (52351) Time: : 19:32:28 Waiting for time: 19:33:0[0m
+[0;32mI (52551) Time: : 19:32:28 Waiting for time: 19:33:0[0m
+[0;32mI (52751) Time: : 19:32:28 Waiting for time: 19:33:0[0m
+[0;32mI (52951) Time: : 19:32:29 Waiting for time: 19:33:0[0m
+[0;32mI (53151) Time: : 19:32:29 Waiting for time: 19:33:0[0m
+[0;32mI (53351) Time: : 19:32:29 Waiting for time: 19:33:0[0m
+[0;32mI (53551) Time: : 19:32:29 Waiting for time: 19:33:0[0m
+[0;32mI (53751) Time: : 19:32:29 Waiting for time: 19:33:0[0m
+[0;32mI (53951) Time: : 19:32:30 Waiting for time: 19:33:0[0m
+[0;32mI (54151) Time: : 19:32:30 Waiting for time: 19:33:0[0m
+[0;32mI (54351) Time: : 19:32:30 Waiting for time: 19:33:0[0m
+[0;32mI (54551) Time: : 19:32:30 Waiting for time: 19:33:0[0m
+[0;32mI (54751) Time: : 19:32:30 Waiting for time: 19:33:0[0m
+[0;32mI (54951) Time: : 19:32:31 Waiting for time: 19:33:0[0m
+[0;32mI (55151) Time: : 19:32:31 Waiting for time: 19:33:0[0m
+[0;32mI (55351) Time: : 19:32:31 Waiting for time: 19:33:0[0m
+[0;32mI (55551) Time: : 19:32:31 Waiting for time: 19:33:0[0m
+[0;32mI (55751) Time: : 19:32:31 Waiting for time: 19:33:0[0m
+[0;32mI (55951) Time: : 19:32:32 Waiting for time: 19:33:0[0m
+[0;32mI (56151) Time: : 19:32:32 Waiting for time: 19:33:0[0m
+[0;32mI (56351) Time: : 19:32:32 Waiting for time: 19:33:0[0m
+[0;32mI (56551) Time: : 19:32:32 Waiting for time: 19:33:0[0m
+[0;32mI (56751) Time: : 19:32:32 Waiting for time: 19:33:0[0m
+[0;32mI (56951) Time: : 19:32:33 Waiting for time: 19:33:0[0m
+[0;32mI (57151) Time: : 19:32:33 Waiting for time: 19:33:0[0m
+[0;32mI (57351) Time: : 19:32:33 Waiting for time: 19:33:0[0m
+[0;32mI (57551) Time: : 19:32:33 Waiting for time: 19:33:0[0m
+[0;32mI (57751) Time: : 19:32:33 Waiting for time: 19:33:0[0m
+[0;32mI (57951) Time: : 19:32:34 Waiting for time: 19:33:0[0m
+[0;32mI (58151) Time: : 19:32:34 Waiting for time: 19:33:0[0m
+[0;32mI (58351) Time: : 19:32:34 Waiting for time: 19:33:0[0m
+[0;32mI (58551) Time: : 19:32:34 Waiting for time: 19:33:0[0m
+[0;32mI (58751) Time: : 19:32:34 Waiting for time: 19:33:0[0m
+[0;32mI (58951) Time: : 19:32:35 Waiting for time: 19:33:0[0m
+[0;32mI (59151) Time: : 19:32:35 Waiting for time: 19:33:0[0m
+[0;32mI (59351) Time: : 19:32:35 Waiting for time: 19:33:0[0m
+[0;32mI (59551) Time: : 19:32:35 Waiting for time: 19:33:0[0m
+[0;32mI (59751) Time: : 19:32:35 Waiting for time: 19:33:0[0m
+[0;32mI (59951) Time: : 19:32:36 Waiting for time: 19:33:0[0m
+[0;32mI (60151) Time: : 19:32:36 Waiting for time: 19:33:0[0m
+[0;32mI (60351) Time: : 19:32:36 Waiting for time: 19:33:0[0m
+[0;32mI (60551) Time: : 19:32:36 Waiting for time: 19:33:0[0m
+[0;32mI (60751) Time: : 19:32:36 Waiting for time: 19:33:0[0m
+[0;32mI (60951) Time: : 19:32:37 Waiting for time: 19:33:0[0m
+[0;32mI (61151) Time: : 19:32:37 Waiting for time: 19:33:0[0m
+[0;32mI (61351) Time: : 19:32:37 Waiting for time: 19:33:0[0m
+[0;32mI (61551) Time: : 19:32:37 Waiting for time: 19:33:0[0m
+[0;32mI (61751) Time: : 19:32:37 Waiting for time: 19:33:0[0m
+[0;32mI (61951) Time: : 19:32:38 Waiting for time: 19:33:0[0m
+[0;32mI (62151) Time: : 19:32:38 Waiting for time: 19:33:0[0m
+[0;32mI (62351) Time: : 19:32:38 Waiting for time: 19:33:0[0m
+[0;32mI (62551) Time: : 19:32:38 Waiting for time: 19:33:0[0m
+[0;32mI (62751) Time: : 19:32:38 Waiting for time: 19:33:0[0m
+[0;32mI (62951) Time: : 19:32:39 Waiting for time: 19:33:0[0m
+[0;32mI (63151) Time: : 19:32:39 Waiting for time: 19:33:0[0m
+[0;32mI (63351) Time: : 19:32:39 Waiting for time: 19:33:0[0m
+[0;32mI (63551) Time: : 19:32:39 Waiting for time: 19:33:0[0m
+[0;32mI (63751) Time: : 19:32:39 Waiting for time: 19:33:0[0m
+[0;32mI (63951) Time: : 19:32:40 Waiting for time: 19:33:0[0m
+[0;32mI (64151) Time: : 19:32:40 Waiting for time: 19:33:0[0m
+[0;32mI (64351) Time: : 19:32:40 Waiting for time: 19:33:0[0m
+[0;32mI (64551) Time: : 19:32:40 Waiting for time: 19:33:0[0m
+[0;32mI (64751) Time: : 19:32:40 Waiting for time: 19:33:0[0m
+[0;32mI (64951) Time: : 19:32:41 Waiting for time: 19:33:0[0m
+[0;32mI (65151) Time: : 19:32:41 Waiting for time: 19:33:0[0m
+[0;32mI (65351) Time: : 19:32:41 Waiting for time: 19:33:0[0m
+[0;32mI (65551) Time: : 19:32:41 Waiting for time: 19:33:0[0m
+[0;32mI (65751) Time: : 19:32:41 Waiting for time: 19:33:0[0m
+[0;32mI (65951) Time: : 19:32:42 Waiting for time: 19:33:0[0m
+[0;32mI (66151) Time: : 19:32:42 Waiting for time: 19:33:0[0m
+[0;32mI (66351) Time: : 19:32:42 Waiting for time: 19:33:0[0m
+[0;32mI (66551) Time: : 19:32:42 Waiting for time: 19:33:0[0m
+[0;32mI (66751) Time: : 19:32:42 Waiting for time: 19:33:0[0m
+[0;32mI (66951) Time: : 19:32:43 Waiting for time: 19:33:0[0m
+[0;32mI (67151) Time: : 19:32:43 Waiting for time: 19:33:0[0m
+[0;32mI (67351) Time: : 19:32:43 Waiting for time: 19:33:0[0m
+[0;32mI (67551) Time: : 19:32:43 Waiting for time: 19:33:0[0m
+[0;32mI (67751) Time: : 19:32:43 Waiting for time: 19:33:0[0m
+[0;32mI (67951) Time: : 19:32:44 Waiting for time: 19:33:0[0m
+[0;32mI (68151) Time: : 19:32:44 Waiting for time: 19:33:0[0m
+[0;32mI (68351) Time: : 19:32:44 Waiting for time: 19:33:0[0m
+[0;32mI (68551) Time: : 19:32:44 Waiting for time: 19:33:0[0m
+[0;32mI (68751) Time: : 19:32:44 Waiting for time: 19:33:0[0m
+[0;32mI (68951) Time: : 19:32:45 Waiting for time: 19:33:0[0m
+[0;32mI (69151) Time: : 19:32:45 Waiting for time: 19:33:0[0m
+[0;32mI (69351) Time: : 19:32:45 Waiting for time: 19:33:0[0m
+[0;32mI (69551) Time: : 19:32:45 Waiting for time: 19:33:0[0m
+[0;32mI (69751) Time: : 19:32:45 Waiting for time: 19:33:0[0m
+[0;32mI (69951) Time: : 19:32:46 Waiting for time: 19:33:0[0m
+[0;32mI (70151) Time: : 19:32:46 Waiting for time: 19:33:0[0m
+[0;32mI (70351) Time: : 19:32:46 Waiting for time: 19:33:0[0m
+[0;32mI (70551) Time: : 19:32:46 Waiting for time: 19:33:0[0m
+[0;32mI (70751) Time: : 19:32:46 Waiting for time: 19:33:0[0m
+[0;32mI (70951) Time: : 19:32:47 Waiting for time: 19:33:0[0m
+[0;32mI (71151) Time: : 19:32:47 Waiting for time: 19:33:0[0m
+[0;32mI (71351) Time: : 19:32:47 Waiting for time: 19:33:0[0m
+[0;32mI (71551) Time: : 19:32:47 Waiting for time: 19:33:0[0m
+[0;32mI (71751) Time: : 19:32:47 Waiting for time: 19:33:0[0m
+[0;32mI (71951) Time: : 19:32:48 Waiting for time: 19:33:0[0m
+[0;32mI (72151) Time: : 19:32:48 Waiting for time: 19:33:0[0m
+[0;32mI (72351) Time: : 19:32:48 Waiting for time: 19:33:0[0m
+[0;32mI (72551) Time: : 19:32:48 Waiting for time: 19:33:0[0m
+[0;32mI (72751) Time: : 19:32:48 Waiting for time: 19:33:0[0m
+[0;32mI (72951) Time: : 19:32:49 Waiting for time: 19:33:0[0m
+[0;32mI (73151) Time: : 19:32:49 Waiting for time: 19:33:0[0m
+[0;32mI (73351) Time: : 19:32:49 Waiting for time: 19:33:0[0m
+[0;32mI (73551) Time: : 19:32:49 Waiting for time: 19:33:0[0m
+[0;32mI (73751) Time: : 19:32:49 Waiting for time: 19:33:0[0m
+[0;32mI (73951) Time: : 19:32:50 Waiting for time: 19:33:0[0m
+[0;32mI (74151) Time: : 19:32:50 Waiting for time: 19:33:0[0m
+[0;32mI (74351) Time: : 19:32:50 Waiting for time: 19:33:0[0m
+[0;32mI (74551) Time: : 19:32:50 Waiting for time: 19:33:0[0m
+[0;32mI (74751) Time: : 19:32:50 Waiting for time: 19:33:0[0m
+[0;32mI (74951) Time: : 19:32:51 Waiting for time: 19:33:0[0m
+[0;32mI (75151) Time: : 19:32:51 Waiting for time: 19:33:0[0m
+[0;32mI (75351) Time: : 19:32:51 Waiting for time: 19:33:0[0m
+[0;32mI (75551) Time: : 19:32:51 Waiting for time: 19:33:0[0m
+[0;32mI (75751) Time: : 19:32:51 Waiting for time: 19:33:0[0m
+[0;32mI (75951) Time: : 19:32:52 Waiting for time: 19:33:0[0m
+[0;32mI (76151) Time: : 19:32:52 Waiting for time: 19:33:0[0m
+[0;32mI (76351) Time: : 19:32:52 Waiting for time: 19:33:0[0m
+[0;32mI (76551) Time: : 19:32:52 Waiting for time: 19:33:0[0m
+[0;32mI (76751) Time: : 19:32:52 Waiting for time: 19:33:0[0m
+[0;32mI (76951) Time: : 19:32:53 Waiting for time: 19:33:0[0m
+[0;32mI (77151) Time: : 19:32:53 Waiting for time: 19:33:0[0m
+[0;32mI (77351) Time: : 19:32:53 Waiting for time: 19:33:0[0m
+[0;32mI (77551) Time: : 19:32:53 Waiting for time: 19:33:0[0m
+[0;32mI (77751) Time: : 19:32:53 Waiting for time: 19:33:0[0m
+[0;32mI (77951) Time: : 19:32:54 Waiting for time: 19:33:0[0m
+[0;32mI (78151) Time: : 19:32:54 Waiting for time: 19:33:0[0m
+[0;32mI (78351) Time: : 19:32:54 Waiting for time: 19:33:0[0m
+[0;32mI (78551) Time: : 19:32:54 Waiting for time: 19:33:0[0m
+[0;32mI (78751) Time: : 19:32:54 Waiting for time: 19:33:0[0m
+[0;32mI (78951) Time: : 19:32:55 Waiting for time: 19:33:0[0m
+[0;32mI (79151) Time: : 19:32:55 Waiting for time: 19:33:0[0m
+[0;32mI (79351) Time: : 19:32:55 Waiting for time: 19:33:0[0m
+[0;32mI (79551) Time: : 19:32:55 Waiting for time: 19:33:0[0m
+[0;32mI (79751) Time: : 19:32:55 Waiting for time: 19:33:0[0m
+[0;32mI (79951) Time: : 19:32:56 Waiting for time: 19:33:0[0m
+[0;32mI (80151) Time: : 19:32:56 Waiting for time: 19:33:0[0m
+[0;32mI (80351) Time: : 19:32:56 Waiting for time: 19:33:0[0m
+[0;32mI (80551) Time: : 19:32:56 Waiting for time: 19:33:0[0m
+[0;32mI (80751) Time: : 19:32:56 Waiting for time: 19:33:0[0m
+[0;32mI (80951) Time: : 19:32:57 Waiting for time: 19:33:0[0m
+[0;32mI (81151) Time: : 19:32:57 Waiting for time: 19:33:0[0m
+[0;32mI (81351) Time: : 19:32:57 Waiting for time: 19:33:0[0m
+[0;32mI (81551) Time: : 19:32:57 Waiting for time: 19:33:0[0m
+[0;32mI (81751) Time: : 19:32:57 Waiting for time: 19:33:0[0m
+[0;32mI (81951) Time: : 19:32:58 Waiting for time: 19:33:0[0m
+[0;32mI (82151) Time: : 19:32:58 Waiting for time: 19:33:0[0m
+[0;32mI (82351) Time: : 19:32:58 Waiting for time: 19:33:0[0m
+[0;32mI (82551) Time: : 19:32:58 Waiting for time: 19:33:0[0m
+[0;32mI (82751) Time: : 19:32:58 Waiting for time: 19:33:0[0m
+[0;32mI (82951) Time: : 19:32:59 Waiting for time: 19:33:0[0m
+[0;32mI (83151) Time: : 19:32:59 Waiting for time: 19:33:0[0m
+[0;32mI (83351) Time: : 19:32:59 Waiting for time: 19:33:0[0m
+[0;32mI (83551) Time: : 19:32:59 Waiting for time: 19:33:0[0m
+[0;32mI (83751) Time: : 19:32:59 Waiting for time: 19:33:0[0m
+[0;32mI (83951) Time: : 19:33:0 Waiting for time: 19:33:0[0m
+[0;32mI (84151) Time: : 19:33:0 Waiting for time: 19:33:0[0m
+[0;32mI (84351) Time: : 19:33:0 Waiting for time: 19:33:0[0m
+[0;32mI (84551) Time: : 19:33:0 Waiting for time: 19:33:0[0m
+[0;32mI (84751) Time: : 19:33:0 Waiting for time: 19:33:0[0m
+[0;32mI (84951) Time: : 19:33:1 Waiting for time: 19:33:0[0m
+[0;32mI (85151) Time: : 19:33:1 Waiting for time: 19:33:0[0m
+[0;32mI (85351) Time: : 19:33:1 Waiting for time: 19:33:0[0m
+[0;32mI (85551) Time: : 19:33:1 Waiting for time: 19:33:0[0m
+[0;32mI (85751) Time: : 19:33:1 Waiting for time: 19:33:0[0m
+[0;32mI (85951) Time: : 19:33:2 Waiting for time: 19:33:0[0m
+[0;32mI (86151) Time: : 19:33:2 Waiting for time: 19:33:0[0m
+[0;32mI (86351) Time: : 19:33:2 Waiting for time: 19:33:0[0m
+[0;32mI (86551) Time: : 19:33:2 Waiting for time: 19:33:0[0m
+[0;32mI (86751) Time: : 19:33:2 Waiting for time: 19:33:0[0m
+[0;32mI (86951) Time: : 19:33:3 Waiting for time: 19:33:0[0m
+[0;32mI (87151) Time: : 19:33:3 Waiting for time: 19:33:0[0m
+[0;32mI (87351) Time: : 19:33:3 Waiting for time: 19:33:0[0m
+[0;32mI (87551) Time: : 19:33:3 Waiting for time: 19:33:0[0m
+[0;32mI (87751) Time: : 19:33:3 Waiting for time: 19:33:0[0m
+[0;32mI (87951) Time: : 19:33:4 Waiting for time: 19:33:0[0m
+[0;32mI (88151) Time: : 19:33:4 Waiting for time: 19:33:0[0m
+[0;32mI (88351) Time: : 19:33:4 Waiting for time: 19:33:0[0m
+[0;32mI (88551) Time: : 19:33:4 Waiting for time: 19:33:0[0m
+[0;32mI (88751) Time: : 19:33:4 Waiting for time: 19:33:0[0m
+[0;32mI (88951) Time: : 19:33:5 Waiting for time: 19:33:0[0m
+[0;32mI (89151) Time: : 19:33:5 Waiting for time: 19:33:0[0m
+[0;32mI (89351) Time: : 19:33:5 Waiting for time: 19:33:0[0m
+[0;32mI (89551) Time: : 19:33:5 Waiting for time: 19:33:0[0m
+[0;32mI (89751) Time: : 19:33:5 Waiting for time: 19:33:0[0m
+[0;32mI (89951) Time: : 19:33:6 Waiting for time: 19:33:0[0m
+[0;32mI (90151) Time: : 19:33:6 Waiting for time: 19:33:0[0m
+[0;32mI (90351) Time: : 19:33:6 Waiting for time: 19:33:0[0m
+[0;32mI (90551) Time: : 19:33:6 Waiting for time: 19:33:0[0m
+[0;32mI (90751) Time: : 19:33:6 Waiting for time: 19:33:0[0m
+[0;32mI (90951) Time: : 19:33:7 Waiting for time: 19:33:0[0m
+[0;32mI (91151) Time: : 19:33:7 Waiting for time: 19:33:0[0m
+[0;32mI (91351) Time: : 19:33:7 Waiting for time: 19:33:0[0m
+[0;32mI (91551) Time: : 19:33:7 Waiting for time: 19:33:0[0m
+[0;32mI (91751) Time: : 19:33:7 Waiting for time: 19:33:0[0m
+[0;32mI (91951) Time: : 19:33:8 Waiting for time: 19:33:0[0m
+[0;32mI (92151) Time: : 19:33:8 Waiting for time: 19:33:0[0m
+[0;32mI (92351) Time: : 19:33:8 Waiting for time: 19:33:0[0m
+[0;32mI (92551) Time: : 19:33:8 Waiting for time: 19:33:0[0m
+[0;32mI (92751) Time: : 19:33:8 Waiting for time: 19:33:0[0m
+[0;32mI (92951) Time: : 19:33:9 Waiting for time: 19:33:0[0m
+[0;32mI (93151) Time: : 19:33:9 Waiting for time: 19:33:0[0m
+[0;32mI (93351) Time: : 19:33:9 Waiting for time: 19:33:0[0m
+[0;32mI (93551) Time: : 19:33:9 Waiting for time: 19:33:0[0m
+[0;32mI (93751) Time: : 19:33:9 Waiting for time: 19:33:0[0m
+[0;32mI (93951) Time: : 19:33:10 Waiting for time: 19:33:0[0m
+[0;32mI (94151) Time: : 19:33:10 Waiting for time: 19:33:0[0m
+[0;32mI (94351) Time: : 19:33:10 Waiting for time: 19:33:0[0m
+[0;32mI (94551) Time: : 19:33:10 Waiting for time: 19:33:0[0m
+[0;32mI (94751) Time: : 19:33:10 Waiting for time: 19:33:0[0m
+[0;32mI (94951) Time: : 19:33:11 Waiting for time: 19:33:0[0m
+[0;32mI (95151) Time: : 19:33:11 Waiting for time: 19:33:0[0m
+[0;32mI (95351) Time: : 19:33:11 Waiting for time: 19:33:0[0m
+[0;32mI (95551) Time: : 19:33:11 Waiting for time: 19:33:0[0m
+[0;32mI (95751) Time: : 19:33:11 Waiting for time: 19:33:0[0m
+[0;32mI (95951) Time: : 19:33:12 Waiting for time: 19:33:0[0m
+[0;32mI (96151) Time: : 19:33:12 Waiting for time: 19:33:0[0m
+[0;32mI (96351) Time: : 19:33:12 Waiting for time: 19:33:0[0m
+[0;32mI (96551) Time: : 19:33:12 Waiting for time: 19:33:0[0m
+[0;32mI (96751) Time: : 19:33:12 Waiting for time: 19:33:0[0m
+[0;32mI (96951) Time: : 19:33:13 Waiting for time: 19:33:0[0m
+[0;32mI (97151) Time: : 19:33:13 Waiting for time: 19:33:0[0m
+[0;32mI (97351) Time: : 19:33:13 Waiting for time: 19:33:0[0m
+[0;32mI (97551) Time: : 19:33:13 Waiting for time: 19:33:0[0m
+[0;32mI (97751) Time: : 19:33:13 Waiting for time: 19:33:0[0m
+[0;32mI (97951) Time: : 19:33:14 Waiting for time: 19:33:0[0m
+[0;32mI (98151) Time: : 19:33:14 Waiting for time: 19:33:0[0m
+[0;32mI (98351) Time: : 19:33:14 Waiting for time: 19:33:0[0m
+[0;32mI (98551) Time: : 19:33:14 Waiting for time: 19:33:0[0m
+[0;32mI (98751) Time: : 19:33:14 Waiting for time: 19:33:0[0m
+[0;32mI (98951) Time: : 19:33:15 Waiting for time: 19:33:0[0m
+[0;32mI (99151) Time: : 19:33:15 Waiting for time: 19:33:0[0m
+[0;32mI (99351) Time: : 19:33:15 Waiting for time: 19:33:0[0m
+[0;32mI (99551) Time: : 19:33:15 Waiting for time: 19:33:0[0m
+[0;32mI (99751) Time: : 19:33:15 Waiting for time: 19:33:0[0m
+[0;32mI (99951) Time: : 19:33:16 Waiting for time: 19:33:0[0m
+[0;32mI (100151) Time: : 19:33:16 Waiting for time: 19:33:0[0m
+[0;32mI (100351) Time: : 19:33:16 Waiting for time: 19:33:0[0m
+[0;32mI (100551) Time: : 19:33:16 Waiting for time: 19:33:0[0m
+[0;32mI (100751) Time: : 19:33:16 Waiting for time: 19:33:0[0m
+[0;32mI (100951) Time: : 19:33:17 Waiting for time: 19:33:0[0m
+[0;32mI (101151) Time: : 19:33:17 Waiting for time: 19:33:0[0m
+[0;32mI (101351) Time: : 19:33:17 Waiting for time: 19:33:0[0m
+[0;32mI (101551) Time: : 19:33:17 Waiting for time: 19:33:0[0m
+[0;32mI (101751) Time: : 19:33:17 Waiting for time: 19:33:0[0m
+[0;32mI (101951) Time: : 19:33:18 Waiting for time: 19:33:0[0m
+[0;32mI (102151) Time: : 19:33:18 Waiting for time: 19:33:0[0m
+[0;32mI (102351) Time: : 19:33:18 Waiting for time: 19:33:0[0m
+[0;32mI (102551) Time: : 19:33:18 Waiting for time: 19:33:0[0m
+[0;32mI (102751) Time: : 19:33:18 Waiting for time: 19:33:0[0m
+[0;32mI (102951) Time: : 19:33:19 Waiting for time: 19:33:0[0m
+[0;32mI (103151) Time: : 19:33:19 Waiting for time: 19:33:0[0m
+[0;32mI (103351) Time: : 19:33:19 Waiting for time: 19:33:0[0m
+[0;32mI (103551) Time: : 19:33:19 Waiting for time: 19:33:0[0m
+[0;32mI (103751) Time: : 19:33:19 Waiting for time: 19:33:0[0m
+[0;32mI (103951) Time: : 19:33:20 Waiting for time: 19:33:0[0m
+[0;32mI (104151) Time: : 19:33:20 Waiting for time: 19:33:0[0m
+[0;32mI (104351) Time: : 19:33:20 Waiting for time: 19:33:0[0m
+[0;32mI (104551) Time: : 19:33:20 Waiting for time: 19:33:0[0m
+[0;32mI (104751) Time: : 19:33:20 Waiting for time: 19:33:0[0m
+[0;32mI (104951) Time: : 19:33:21 Waiting for time: 19:33:0[0m
+[0;32mI (105151) Time: : 19:33:21 Waiting for time: 19:33:0[0m
+[0;32mI (105351) Time: : 19:33:21 Waiting for time: 19:33:0[0m
+[0;32mI (105551) Time: : 19:33:21 Waiting for time: 19:33:0[0m
+[0;32mI (105751) Time: : 19:33:21 Waiting for time: 19:33:0[0m
+[0;32mI (105951) Time: : 19:33:22 Waiting for time: 19:33:0[0m
+[0;32mI (106151) Time: : 19:33:22 Waiting for time: 19:33:0[0m
+[0;32mI (106351) Time: : 19:33:22 Waiting for time: 19:33:0[0m
+[0;32mI (106551) Time: : 19:33:22 Waiting for time: 19:33:0[0m
+[0;32mI (106751) Time: : 19:33:22 Waiting for time: 19:33:0[0m
+[0;32mI (106951) Time: : 19:33:23 Waiting for time: 19:33:0[0m
+[0;32mI (107151) Time: : 19:33:23 Waiting for time: 19:33:0[0m
+[0;32mI (107351) Time: : 19:33:23 Waiting for time: 19:33:0[0m
+[0;32mI (107551) Time: : 19:33:23 Waiting for time: 19:33:0[0m
+[0;32mI (107751) Time: : 19:33:23 Waiting for time: 19:33:0[0m
+[0;32mI (107951) Time: : 19:33:24 Waiting for time: 19:33:0[0m
+[0;32mI (108151) Time: : 19:33:24 Waiting for time: 19:33:0[0m
+[0;32mI (108351) Time: : 19:33:24 Waiting for time: 19:33:0[0m
+[0;32mI (108551) Time: : 19:33:24 Waiting for time: 19:33:0[0m
+[0;32mI (108751) Time: : 19:33:24 Waiting for time: 19:33:0[0m
+[0;32mI (108951) Time: : 19:33:25 Waiting for time: 19:33:0[0m
+[0;32mI (109151) Time: : 19:33:25 Waiting for time: 19:33:0[0m
+[0;32mI (109351) Time: : 19:33:25 Waiting for time: 19:33:0[0m
+[0;32mI (109551) Time: : 19:33:25 Waiting for time: 19:33:0[0m
+[0;32mI (109751) Time: : 19:33:25 Waiting for time: 19:33:0[0m
+[0;32mI (109951) Time: : 19:33:26 Waiting for time: 19:33:0[0m
+[0;32mI (110151) Time: : 19:33:26 Waiting for time: 19:33:0[0m
+[0;32mI (110351) Time: : 19:33:26 Waiting for time: 19:33:0[0m
+[0;32mI (110551) Time: : 19:33:26 Waiting for time: 19:33:0[0m
+[0;32mI (110751) Time: : 19:33:26 Waiting for time: 19:33:0[0m
+[0;32mI (110951) Time: : 19:33:27 Waiting for time: 19:33:0[0m
+[0;32mI (111151) Time: : 19:33:27 Waiting for time: 19:33:0[0m
+[0;32mI (111351) Time: : 19:33:27 Waiting for time: 19:33:0[0m
+[0;32mI (111551) Time: : 19:33:27 Waiting for time: 19:33:0[0m
+[0;32mI (111751) Time: : 19:33:27 Waiting for time: 19:33:0[0m
+[0;32mI (111951) Time: : 19:33:28 Waiting for time: 19:33:0[0m
+[0;32mI (112151) Time: : 19:33:28 Waiting for time: 19:33:0[0m
+[0;32mI (112351) Time: : 19:33:28 Waiting for time: 19:33:0[0m
+[0;32mI (112551) Time: : 19:33:28 Waiting for time: 19:33:0[0m
+[0;32mI (112751) Time: : 19:33:28 Waiting for time: 19:33:0[0m
+[0;32mI (112951) Time: : 19:33:29 Waiting for time: 19:33:0[0m
+[0;32mI (113151) Time: : 19:33:29 Waiting for time: 19:33:0[0m
+[0;32mI (113351) Time: : 19:33:29 Waiting for time: 19:33:0[0m
+[0;32mI (113551) Time: : 19:33:29 Waiting for time: 19:33:0[0m
+[0;32mI (113751) Time: : 19:33:29 Waiting for time: 19:33:0[0m
+[0;32mI (113951) Time: : 19:33:30 Waiting for time: 19:33:0[0m
+[0;32mI (114151) Time: : 19:33:30 Waiting for time: 19:33:0[0m
+[0;32mI (114351) Time: : 19:33:30 Waiting for time: 19:33:0[0m
+[0;32mI (114551) Time: : 19:33:30 Waiting for time: 19:33:0[0m
+[0;32mI (114751) Time: : 19:33:30 Waiting for time: 19:33:0[0m
+[0;32mI (114951) Time: : 19:33:31 Waiting for time: 19:33:0[0m
+[0;32mI (115151) Time: : 19:33:31 Waiting for time: 19:33:0[0m
+[0;32mI (115351) Time: : 19:33:31 Waiting for time: 19:33:0[0m
+[0;32mI (115551) Time: : 19:33:31 Waiting for time: 19:33:0[0m
+[0;32mI (115751) Time: : 19:33:31 Waiting for time: 19:33:0[0m
+[0;32mI (115951) Time: : 19:33:32 Waiting for time: 19:33:0[0m
+[0;32mI (116151) Time: : 19:33:32 Waiting for time: 19:33:0[0m
+[0;32mI (116351) Time: : 19:33:32 Waiting for time: 19:33:0[0m
+[0;32mI (116551) Time: : 19:33:32 Waiting for time: 19:33:0[0m
+[0;32mI (116751) Time: : 19:33:32 Waiting for time: 19:33:0[0m
+[0;32mI (116951) Time: : 19:33:33 Waiting for time: 19:33:0[0m

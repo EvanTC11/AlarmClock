@@ -1,0 +1,197 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4832
+load:0x40078000,len:16460
+load:0x40080400,len:4
+load:0x40080404,len:3504
+entry 0x400805cc
+[0;32mI (291) cpu_start: Multicore app[0m
+[0;32mI (299) cpu_start: Pro cpu start user code[0m
+[0;32mI (299) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) cpu_start: Application information:[0m
+[0;32mI (302) cpu_start: Project name:     dad-birthday[0m
+[0;32mI (308) cpu_start: App version:      1[0m
+[0;32mI (312) cpu_start: Compile time:     Jun 18 2024 17:46:44[0m
+[0;32mI (318) cpu_start: ELF file SHA256:  844890e5b...[0m
+[0;32mI (324) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (329) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (333) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (338) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 3FFB82D0 len 00027D30 (159 KiB): DRAM[0m
+[0;32mI (362) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (375) heap_init: At 40096858 len 000097A8 (37 KiB): IRAM[0m
+[0;32mI (382) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;32mI (391) main_task: Started on CPU0[0m
+[0;32mI (401) main_task: Calling app_main()[0m
+[0;32mI (431) WifiConnection: SSID: KC and JoJo[0m
+[0;32mI (431) WifiConnection: PASSWORD Ev@n_090111[0m
+I (451) wifi:wifi driver task: 3ffc0348, prio:23, stack:6656, core=0
+I (461) wifi:wifi firmware version: 3e0076f
+I (471) wifi:wifi certification version: v7.0
+I (471) wifi:config NVS flash: enabled
+I (471) wifi:config nano formating: disabled
+I (471) wifi:Init data frame dynamic rx buffer num: 32
+I (471) wifi:Init static rx mgmt buffer num: 5
+I (481) wifi:Init management short buffer num: 32
+I (481) wifi:Init dynamic tx buffer num: 32
+I (491) wifi:Init static rx buffer size: 1600
+I (491) wifi:Init static rx buffer num: 10
+I (491) wifi:Init dynamic rx buffer num: 32
+[0;32mI (501) wifi_init: rx ba win: 6[0m
+[0;32mI (501) wifi_init: tcpip mbox: 32[0m
+[0;32mI (511) wifi_init: udp mbox: 6[0m
+[0;32mI (511) wifi_init: tcp mbox: 6[0m
+[0;32mI (511) wifi_init: tcp tx win: 5760[0m
+[0;32mI (521) wifi_init: tcp rx win: 5760[0m
+[0;32mI (521) wifi_init: tcp mss: 1440[0m
+[0;32mI (531) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (531) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (581) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (661) wifi:mode : sta (e8:6b:ea:ca:38:3c)
+I (661) wifi:enable tsf
+[0;32mI (661) WifiConnection: Wifi initialised[0m
+I (1111) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1111) wifi:state: init -> auth (b0)
+I (1111) wifi:state: auth -> assoc (0)
+I (1151) wifi:state: assoc -> run (10)
+I (1261) wifi:connected with KC and JoJo, aid = 5, channel 1, BW20, bssid = 64:cc:22:04:7c:45
+I (1261) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (1271) wifi:pm start, type: 1
+
+I (1271) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1331) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (1341) wifi:<ba-add>idx:0 (ifx:0, 64:cc:22:04:7c:45), tid:6, ssn:16, winSize:64
+[0;32mI (2771) esp_netif_handlers: sta ip: 192.168.1.123, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (2771) WifiConnection: Got IP: 192.168.1.123[0m
+[0;32mI (2771) WifiConnection: Connected to the internet![0m
+[0;32mI (2781) Time: Waiting for system time to be set...[0m
+[0;32mI (4781) Time: Waiting for system time to be set...[0m
+I (5331) wifi:<ba-add>idx:1 (ifx:0, 64:cc:22:04:7c:45), tid:0, ssn:1726, winSize:64
+[0;32mI (6781) HTTPServer: HTTP Server started[0m
+[0;32mI (6781) Time: : 11:22:28 Waiting for time: 0:0:0[0m
+[0;32mI (6981) Time: : 11:22:28 Waiting for time: 0:0:0[0m
+[0;32mI (7181) Time: : 11:22:29 Waiting for time: 0:0:0[0m
+[0;32mI (7381) Time: : 11:22:29 Waiting for time: 0:0:0[0m
+[0;32mI (7581) Time: : 11:22:29 Waiting for time: 0:0:0[0m
+[0;32mI (7781) Time: : 11:22:29 Waiting for time: 0:0:0[0m
+[0;32mI (7981) Time: : 11:22:29 Waiting for time: 0:0:0[0m
+[0;32mI (8181) Time: : 11:22:30 Waiting for time: 0:0:0[0m
+[0;32mI (8381) Time: : 11:22:30 Waiting for time: 0:0:0[0m
+[0;32mI (8581) Time: : 11:22:30 Waiting for time: 0:0:0[0m
+[0;32mI (8781) Time: : 11:22:30 Waiting for time: 0:0:0[0m
+[0;32mI (8981) Time: : 11:22:30 Waiting for time: 0:0:0[0m
+[0;32mI (9181) Time: : 11:22:31 Waiting for time: 0:0:0[0m
+[0;32mI (9381) Time: : 11:22:31 Waiting for time: 0:0:0[0m
+[0;32mI (9581) Time: : 11:22:31 Waiting for time: 0:0:0[0m
+[0;32mI (9781) Time: : 11:22:31 Waiting for time: 0:0:0[0m
+[0;32mI (9981) Time: : 11:22:31 Waiting for time: 0:0:0[0m
+[0;32mI (10181) Time: : 11:22:32 Waiting for time: 0:0:0[0m
+[0;32mI (10381) Time: : 11:22:32 Waiting for time: 0:0:0[0m
+[0;32mI (10581) Time: : 11:22:32 Waiting for time: 0:0:0[0m
+[0;32mI (10781) Time: : 11:22:32 Waiting for time: 0:0:0[0m
+[0;32mI (10981) Time: : 11:22:32 Waiting for time: 0:0:0[0m
+[0;32mI (11181) Time: : 11:22:33 Waiting for time: 0:0:0[0m
+[0;32mI (11381) Time: : 11:22:33 Waiting for time: 0:0:0[0m
+[0;32mI (11581) Time: : 11:22:33 Waiting for time: 0:0:0[0m
+[0;32mI (11781) Time: : 11:22:33 Waiting for time: 0:0:0[0m
+[0;32mI (11981) Time: : 11:22:33 Waiting for time: 0:0:0[0m
+[0;32mI (12181) Time: : 11:22:34 Waiting for time: 0:0:0[0m
+[0;32mI (12381) Time: : 11:22:34 Waiting for time: 0:0:0[0m
+[0;32mI (12581) Time: : 11:22:34 Waiting for time: 0:0:0[0m
+[0;32mI (12781) Time: : 11:22:34 Waiting for time: 0:0:0[0m
+[0;32mI (12981) Time: : 11:22:34 Waiting for time: 0:0:0[0m
+[0;32mI (13181) Time: : 11:22:35 Waiting for time: 0:0:0[0m
+[0;32mI (13381) Time: : 11:22:35 Waiting for time: 0:0:0[0m
+[0;32mI (13581) Time: : 11:22:35 Waiting for time: 0:0:0[0m
+[0;32mI (13781) Time: : 11:22:35 Waiting for time: 0:0:0[0m
+[0;32mI (13981) Time: : 11:22:35 Waiting for time: 0:0:0[0m
+[0;32mI (14181) Time: : 11:22:36 Waiting for time: 0:0:0[0m
+[0;32mI (14381) Time: : 11:22:36 Waiting for time: 0:0:0[0m
+[0;32mI (14581) Time: : 11:22:36 Waiting for time: 0:0:0[0m
+[0;32mI (14781) Time: : 11:22:36 Waiting for time: 0:0:0[0m
+[0;32mI (14981) Time: : 11:22:36 Waiting for time: 0:0:0[0m
+[0;32mI (15181) Time: : 11:22:37 Waiting for time: 0:0:0[0m
+[0;32mI (15381) Time: : 11:22:37 Waiting for time: 0:0:0[0m
+[0;32mI (15581) Time: : 11:22:37 Waiting for time: 0:0:0[0m
+[0;32mI (15781) Time: : 11:22:37 Waiting for time: 0:0:0[0m
+[0;32mI (15981) Time: : 11:22:37 Waiting for time: 0:0:0[0m
+[0;32mI (16181) Time: : 11:22:38 Waiting for time: 0:0:0[0m
+[0;32mI (16381) Time: : 11:22:38 Waiting for time: 0:0:0[0m
+[0;32mI (16581) Time: : 11:22:38 Waiting for time: 0:0:0[0m
+[0;32mI (16781) Time: : 11:22:38 Waiting for time: 0:0:0[0m
+[0;32mI (16981) Time: : 11:22:38 Waiting for time: 0:0:0[0m
+[0;32mI (17181) Time: : 11:22:39 Waiting for time: 0:0:0[0m
+[0;32mI (17381) Time: : 11:22:39 Waiting for time: 0:0:0[0m
+[0;32mI (17581) Time: : 11:22:39 Waiting for time: 0:0:0[0m
+[0;32mI (17781) Time: : 11:22:39 Waiting for time: 0:0:0[0m
+[0;32mI (17981) Time: : 11:22:39 Waiting for time: 0:0:0[0m
+[0;32mI (18181) Time: : 11:22:40 Waiting for time: 0:0:0[0m
+[0;32mI (18381) Time: : 11:22:40 Waiting for time: 0:0:0[0m
+[0;32mI (18581) Time: : 11:22:40 Waiting for time: 0:0:0[0m
+[0;32mI (18781) Time: : 11:22:40 Waiting for time: 0:0:0[0m
+[0;32mI (18981) Time: : 11:22:40 Waiting for time: 0:0:0[0m
+[0;32mI (19181) Time: : 11:22:41 Waiting for time: 0:0:0[0m
+[0;32mI (19261) elodie-birthday: Alarm set for 11:22:50[0m
+[0;32mI (19381) Time: : 11:22:41 Waiting for time: 11:22:50[0m
+[0;32mI (19581) Time: : 11:22:41 Waiting for time: 11:22:50[0m
+[0;32mI (19781) Time: : 11:22:41 Waiting for time: 11:22:50[0m
+[0;32mI (19981) Time: : 11:22:41 Waiting for time: 11:22:50[0m
+[0;32mI (20181) Time: : 11:22:42 Waiting for time: 11:22:50[0m
+[0;32mI (20381) Time: : 11:22:42 Waiting for time: 11:22:50[0m
+[0;32mI (20581) Time: : 11:22:42 Waiting for time: 11:22:50[0m
+[0;32mI (20781) Time: : 11:22:42 Waiting for time: 11:22:50[0m
+[0;32mI (20981) Time: : 11:22:42 Waiting for time: 11:22:50[0m
+[0;32mI (21181) Time: : 11:22:43 Waiting for time: 11:22:50[0m
+[0;32mI (21381) Time: : 11:22:43 Waiting for time: 11:22:50[0m
+[0;32mI (21581) Time: : 11:22:43 Waiting for time: 11:22:50[0m
+[0;32mI (21781) Time: : 11:22:43 Waiting for time: 11:22:50[0m
+[0;32mI (21981) Time: : 11:22:43 Waiting for time: 11:22:50[0m
+[0;32mI (22181) Time: : 11:22:44 Waiting for time: 11:22:50[0m
+[0;32mI (22381) Time: : 11:22:44 Waiting for time: 11:22:50[0m
+[0;32mI (22581) Time: : 11:22:44 Waiting for time: 11:22:50[0m
+[0;32mI (22781) Time: : 11:22:44 Waiting for time: 11:22:50[0m
+[0;32mI (22981) Time: : 11:22:44 Waiting for time: 11:22:50[0m
+[0;32mI (23181) Time: : 11:22:45 Waiting for time: 11:22:50[0m
+[0;32mI (23381) Time: : 11:22:45 Waiting for time: 11:22:50[0m
+[0;32mI (23581) Time: : 11:22:45 Waiting for time: 11:22:50[0m
+[0;32mI (23781) Time: : 11:22:45 Waiting for time: 11:22:50[0m
+[0;32mI (23981) Time: : 11:22:45 Waiting for time: 11:22:50[0m
+[0;32mI (24181) Time: : 11:22:46 Waiting for time: 11:22:50[0m
+[0;32mI (24381) Time: : 11:22:46 Waiting for time: 11:22:50[0m
+[0;32mI (24581) Time: : 11:22:46 Waiting for time: 11:22:50[0m
+[0;32mI (24781) Time: : 11:22:46 Waiting for time: 11:22:50[0m
+[0;32mI (24981) Time: : 11:22:46 Waiting for time: 11:22:50[0m
+[0;32mI (25181) Time: : 11:22:47 Waiting for time: 11:22:50[0m
+[0;32mI (25381) Time: : 11:22:47 Waiting for time: 11:22:50[0m
+[0;32mI (25581) Time: : 11:22:47 Waiting for time: 11:22:50[0m
+[0;32mI (25781) Time: : 11:22:47 Waiting for time: 11:22:50[0m
+[0;32mI (25981) Time: : 11:22:47 Waiting for time: 11:22:50[0m
+[0;32mI (26181) Time: : 11:22:48 Waiting for time: 11:22:50[0m
+[0;32mI (26381) Time: : 11:22:48 Waiting for time: 11:22:50[0m
+[0;32mI (26581) Time: : 11:22:48 Waiting for time: 11:22:50[0m
+[0;32mI (26781) Time: : 11:22:48 Waiting for time: 11:22:50[0m
+[0;32mI (26981) Time: : 11:22:48 Waiting for time: 11:22:50[0m
+[0;32mI (27181) Time: : 11:22:49 Waiting for time: 11:22:50[0m
+[0;32mI (27381) Time: : 11:22:49 Waiting for time: 11:22:50[0m
+[0;32mI (27581) Time: : 11:22:49 Waiting for time: 11:22:50[0m
+[0;32mI (27781) Time: : 11:22:49 Waiting for time: 11:22:50[0m
+[0;32mI (27981) Time: : 11:22:49 Waiting for time: 11:22:50[0m
+[0;32mI (28181) Time: : 11:22:50 Waiting for time: 11:22:50[0m
+[0;32mI (28181) elodie-birthday: Alarm triggered![0m
+[0;32mI (28281) HTTPServer: HTTP Server stopped[0m
+I (28281) wifi:state: run -> init (0)
+I (28281) wifi:pm stop, total sleep time: 23129739 us / 27006619 us
+
+I (28281) wifi:<ba-del>idx:1, tid:0
+I (28281) wifi:<ba-del>idx:0, tid:6
+I (28291) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (28291) WifiConnection: Successfully disconnected from wifi![0m
+[0;32mI (28301) main_task: Returned from app_main()[0m
